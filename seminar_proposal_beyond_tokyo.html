@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>セミナー企画提案書｜Beyond Tokyo × エステティック通信</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; background: #fff8fb; color: #1a1a1a; line-height: 1.7; }
+  .doc { max-width: 760px; margin: 0 auto; padding: 3rem 2rem; }
+
+  .header { background: linear-gradient(135deg, #fbeaf0 0%, #e8f6fb 100%); border-radius: 16px; padding: 2.5rem 2rem; text-align: center; margin-bottom: 2.5rem; border: 1px solid #f0b8cf; }
+  .header-label { font-size: 12px; color: #993556; font-weight: 600; letter-spacing: 0.12em; margin-bottom: 0.75rem; }
+  .header h1 { font-size: 24px; font-weight: 700; color: #4b1528; margin-bottom: 0.5rem; line-height: 1.4; }
+  .header-sub { font-size: 13px; color: #72243e; }
+
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 2.5rem; }
+  .meta-card { background: #e8f6fb; border: 1px solid #b5d4f4; border-radius: 12px; padding: 1rem 1.25rem; }
+  .meta-label { font-size: 11px; color: #185fa5; font-weight: 600; margin-bottom: 4px; letter-spacing: 0.05em; }
+  .meta-value { font-size: 14px; color: #042c53; font-weight: 500; }
+
+  .section { margin-bottom: 2.5rem; }
+  .section-title { font-size: 16px; font-weight: 700; color: #4b1528; border-left: 4px solid #d4537e; padding-left: 12px; margin-bottom: 1.25rem; }
+
+  .profile-card { background: #fff; border: 1px solid #f0b8cf; border-radius: 12px; padding: 1.5rem; margin-bottom: 12px; }
+  .profile-header { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+  .avatar { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; flex-shrink: 0; }
+  .avatar-pink { background: #fbeaf0; color: #993556; border: 2px solid #f0b8cf; }
+  .avatar-blue { background: #e8f6fb; color: #185fa5; border: 2px solid #b5d4f4; }
+  .profile-name { font-size: 16px; font-weight: 700; color: #1a1a1a; }
+  .profile-role { font-size: 12px; color: #993556; margin-top: 3px; font-weight: 500; }
+  .profile-body { font-size: 13px; color: #555; line-height: 1.8; }
+
+  .theme-card { border-radius: 14px; padding: 1.75rem; margin-bottom: 20px; border: 1px solid; }
+  .theme-card-a { background: #fdf6f9; border-color: #f0b8cf; }
+  .theme-card-b { background: #f4fafd; border-color: #b5d4f4; }
+  .theme-card-c { background: #fdf6f9; border-color: #f0b8cf; }
+
+  .theme-num { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 12px; border-radius: 20px; margin-bottom: 12px; letter-spacing: 0.05em; }
+  .num-pink { background: #f4c0d1; color: #72243e; }
+  .num-blue { background: #b5d4f4; color: #0c447c; }
+
+  .theme-title { font-size: 17px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; line-height: 1.5; }
+  .theme-sub { font-size: 13px; color: #666; margin-bottom: 16px; border-left: 3px solid #d4537e; padding-left: 10px; font-style: italic; line-height: 1.6; }
+  .theme-sub-blue { border-left-color: #378add; }
+
+  .content-label { font-size: 12px; font-weight: 700; color: #993556; margin-bottom: 8px; letter-spacing: 0.05em; }
+  .content-label-blue { color: #185fa5; }
+
+  ul.content-list { padding-left: 1.25rem; margin-bottom: 0; }
+  ul.content-list li { font-size: 13px; color: #444; line-height: 1.8; margin-bottom: 5px; }
+
+  .benefit-box { margin-top: 14px; background: #fff; border-radius: 10px; padding: 12px 16px; border: 1px solid #f0b8cf; }
+  .benefit-box-blue { border-color: #b5d4f4; }
+  .benefit-title { font-size: 12px; font-weight: 700; color: #993556; margin-bottom: 8px; letter-spacing: 0.05em; }
+  .benefit-title-blue { color: #185fa5; }
+
+  .rationale-box { margin-top: 14px; background: #fbeaf0; border-radius: 10px; padding: 12px 16px; }
+  .rationale-box-blue { background: #e8f6fb; }
+  .rationale-label { font-size: 11px; font-weight: 700; color: #72243e; margin-bottom: 5px; letter-spacing: 0.05em; }
+  .rationale-label-blue { color: #0c447c; }
+  .rationale-text { font-size: 12px; color: #4b1528; line-height: 1.7; }
+  .rationale-text-blue { color: #042c53; }
+
+  .timeline-table { width: 100%; border-collapse: collapse; font-size: 13px; border-radius: 10px; overflow: hidden; border: 1px solid #f0b8cf; }
+  .timeline-table th { background: #fbeaf0; color: #72243e; font-weight: 700; padding: 10px 16px; text-align: left; border-bottom: 1px solid #f0b8cf; }
+  .timeline-table td { padding: 10px 16px; border-bottom: 1px solid #fce8f1; color: #444; }
+  .timeline-table tr:last-child td { border-bottom: none; }
+  .timeline-table tr:nth-child(even) td { background: #fffafc; }
+
+  .collab-section { margin-bottom: 1.5rem; }
+  .collab-sub-title { font-size: 13px; font-weight: 700; padding: 8px 14px; border-radius: 8px; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+  .collab-sub-title-pink { color: #72243e; background: #fbeaf0; border-left: 3px solid #d4537e; }
+  .collab-sub-title-blue { color: #0c447c; background: #e8f6fb; border-left: 3px solid #378add; }
+  .collab-sub-title-teal { color: #0f6e56; background: #e1f5ee; border-left: 3px solid #1d9e75; }
+
+  ul.collab-list { list-style: none; padding: 0; }
+  ul.collab-list li { font-size: 13px; color: #444; padding: 7px 0; border-bottom: 1px solid #f5e0e8; display: flex; align-items: flex-start; gap: 8px; line-height: 1.7; }
+  ul.collab-list-blue li { border-bottom-color: #daeef9; }
+  ul.collab-list-teal li { border-bottom-color: #c5ebe0; }
+  ul.collab-list li:last-child { border-bottom: none; }
+  .bullet-pink { color: #d4537e; flex-shrink: 0; font-size: 14px; margin-top: 1px; }
+  .bullet-blue { color: #378add; flex-shrink: 0; font-size: 14px; margin-top: 1px; }
+  .bullet-teal { color: #1d9e75; flex-shrink: 0; font-size: 14px; margin-top: 1px; }
+
+  .footer { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #f0b8cf; font-size: 13px; color: #999; }
+  .footer strong { color: #72243e; }
+
+  @media print {
+    body { background: #fff; }
+    .doc { padding: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <div class="header">
+    <div class="header-label">セミナー企画提案書</div>
+    <h1>Beyond Tokyo × エステティック通信</h1>
+    <div class="header-sub">提出者：エステティック通信編集部　／　提出日：2026年6月30日</div>
+  </div>
+
+  <!-- 1. 企画概要 -->
+  <div class="section">
+    <div class="section-title">1. 企画概要</div>
+    <div class="meta-grid">
+      <div class="meta-card"><div class="meta-label">展示会名</div><div class="meta-value">Beyond Tokyo</div></div>
+      <div class="meta-card"><div class="meta-label">主催メディア</div><div class="meta-value">エステティック通信</div></div>
+      <div class="meta-card"><div class="meta-label">セミナー時間</div><div class="meta-value">約40〜50分</div></div>
+      <div class="meta-card"><div class="meta-label">テーマ軸</div><div class="meta-value">集客力の向上 × 技術力の深化</div></div>
+      <div class="meta-card" style="grid-column: 1 / -1;"><div class="meta-label">対象者</div><div class="meta-value">エステサロン経営者・セラピスト・美容健康プロフェッショナル</div></div>
+    </div>
+  </div>
+
+  <!-- 2. 登壇者プロフィール -->
+  <div class="section">
+    <div class="section-title">2. 登壇者プロフィール</div>
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="avatar avatar-pink">飯尾</div>
+        <div>
+          <div class="profile-name">飯尾 憲子 様（いいお のりこ）</div>
+          <div class="profile-role">チャクラ美容創設者</div>
+        </div>
+      </div>
+      <div class="profile-body">有限会社ジュノー代表取締役。一般社団法人日本チャクラ美容協会理事長。「トータルビューティカレッジ NORIKO」代表を兼任。長年の実務経験をもとに独自のチャクラ美容メソッドを考案し、サロン経営・スクール運営・講師活動と多方面で精力的に活躍。著書・DVDも多数発表しており、チャクラ美容の第一人者として業界内外から高い評価を得ている。</div>
+    </div>
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="avatar avatar-blue">広澤</div>
+        <div>
+          <div class="profile-name">広澤 康衣 様（ひろさわ やすえ）</div>
+          <div class="profile-role">美容鍼灸師</div>
+        </div>
+      </div>
+      <div class="profile-body">株式会社プライムビューティーラボ代表取締役。INFA国際ライセンスゴールドマスター＆プラチナマスターエステティシャン。INFAエステティックスクール新宿新都心校校長。エステティックグランプリ審査員を歴任。厚生労働省認定鍼灸師・医薬品登録販売者など医療系資格も保有し、医療と美容を横断した知見を持つ。現在はサロン経営・スクール指導者として幅広く活躍中。</div>
+    </div>
+  </div>
+
+  <!-- 3. セミナーテーマ案 -->
+  <div class="section">
+    <div class="section-title">3. セミナーテーマ案</div>
+
+    <div class="theme-card theme-card-a">
+      <div class="theme-num num-pink">案①</div>
+      <div class="theme-title">「心と体を整える美容メソッド｜東洋医学×チャクラで"選ばれるサロン"をつくる」</div>
+      <div class="theme-sub">鍼灸・チャクラ・エステの知見を統合した、再現性ある施術設計と集客の秘訣</div>
+      <div class="content-label">セミナー内容</div>
+      <ul class="content-list">
+        <li>東洋医学・チャクラの視点から見た「現代女性の体と心の不調」の読み解き方</li>
+        <li>その不調をエステ施術でどうアプローチするか（技術的根拠と実践例）</li>
+        <li>「なんとなく気持ちいい」で終わらせない、施術に"ストーリーと根拠"を持たせる方法</li>
+        <li>根拠ある技術訴求がそのまま口コミ・リピート・紹介集客につながるメカニズム</li>
+      </ul>
+      <div class="benefit-box">
+        <div class="benefit-title">このセミナーで得られること</div>
+        <ul class="content-list">
+          <li>施術に医療・東洋医学的な根拠を持たせる具体的な方法論</li>
+          <li>顧客への説明力・カウンセリング力の向上</li>
+          <li>「技術の質」を集客・リピートに直結させるための思考フレーム</li>
+        </ul>
+      </div>
+      <div class="rationale-box">
+        <div class="rationale-label">採用根拠</div>
+        <div class="rationale-text">過去のコラボライブのテーマ「東洋医学×心と体の整え方」と世界観を継承しており、登壇者が最も話しやすく深みが出せる領域。展示会来場者（プロ向け）に対して「理論＋実践」の両面で訴求できる構成となっており、集客と技術の両軸を自然に統合できる。</div>
+      </div>
+    </div>
+
+    <div class="theme-card theme-card-b">
+      <div class="theme-num num-blue">案②</div>
+      <div class="theme-title">「"本物の技術"が集客になる時代｜東洋医学の視点で考える次世代エステの形」</div>
+      <div class="theme-sub theme-sub-blue">資格・メソッド・実績をどう「集客の武器」に変えるか</div>
+      <div class="content-label content-label-blue">セミナー内容</div>
+      <ul class="content-list">
+        <li>鍼灸・医薬品・INFA資格など医療系バックグラウンドを施術信頼に変換する方法</li>
+        <li>チャクラ美容メソッドを軸にした独自コンセプトの打ち出し方</li>
+        <li>「価格競争に巻き込まれないサロン」が実践している技術の言語化・ブランド化</li>
+        <li>プロとして「選ばれる理由」を自分で設計するための思考法</li>
+      </ul>
+      <div class="benefit-box benefit-box-blue">
+        <div class="benefit-title benefit-title-blue">このセミナーで得られること</div>
+        <ul class="content-list">
+          <li>自サロンの強みを言語化し、集客メッセージに変換する実践的手法</li>
+          <li>価格競争から脱却するためのポジショニング設計の考え方</li>
+          <li>資格・実績・独自メソッドを「信頼と集客」につなげる具体的アプローチ</li>
+        </ul>
+      </div>
+      <div class="rationale-box rationale-box-blue">
+        <div class="rationale-label rationale-label-blue">採用根拠</div>
+        <div class="rationale-text rationale-text-blue">差別化・ブランディングに悩むサロンオーナーへの訴求力が高く、お二人の異色の資格・経歴の組み合わせ自体がコンテンツになる。「東洋医学の視点」という軸を据えることで、スピリチュアル色を残しつつプロ向けの信頼感ある打ち出しに整理できる。</div>
+      </div>
+    </div>
+
+    <div class="theme-card theme-card-c">
+      <div class="theme-num num-pink">案③</div>
+      <div class="theme-title">「リピーターが自然と増えるサロンの共通点｜体の声を聴く技術と、選ばれ続ける理由」</div>
+      <div class="theme-sub">東洋医学・チャクラ・エステが教える、顧客の心身を掴む施術・カウンセリング術</div>
+      <div class="content-label">セミナー内容</div>
+      <ul class="content-list">
+        <li>「なぜあのサロンにはリピーターが多いのか？」集客・技術両面からの分析</li>
+        <li>体質・チャクラ・経絡から読み解く個別対応カウンセリングの実践法</li>
+        <li>顧客の"気づいていない悩み"を引き出すヒアリング技術</li>
+        <li>「また来たい」と思わせる施術設計と、口コミ・紹介に発展させる関係構築</li>
+      </ul>
+      <div class="benefit-box">
+        <div class="benefit-title">このセミナーで得られること</div>
+        <ul class="content-list">
+          <li>東洋医学・チャクラを活用した顧客カウンセリングの実践スキル</li>
+          <li>リピート率・紹介率を高めるための施術設計の考え方</li>
+          <li>顧客との長期関係構築につながるコミュニケーション技術</li>
+        </ul>
+      </div>
+      <div class="rationale-box">
+        <div class="rationale-label">採用根拠</div>
+        <div class="rationale-text">「リピーター獲得」はサロン経営者が最も切実に求めている成果指標。技術の話でありながら集客・LTV向上の文脈に直結するため、来場動機・満足度ともに高くなりやすい。カウンセリング技術という実務直結のテーマにより、参加者の満足度・行動変容が期待できる。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. タイムライン -->
+  <div class="section">
+    <div class="section-title">4. 想定タイムライン（案）</div>
+    <table class="timeline-table">
+      <thead>
+        <tr><th>時間</th><th>内容</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0:00〜0:05</td><td>オープニング・登壇者紹介</td></tr>
+        <tr><td>0:05〜0:20</td><td>前半パート（理論・背景・事例紹介）</td></tr>
+        <tr><td>0:20〜0:35</td><td>後半パート（実践・具体的手法）</td></tr>
+        <tr><td>0:35〜0:45</td><td>両名によるトークセッション</td></tr>
+        <tr><td>0:45〜0:50</td><td>Q&A・クロージング・告知</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 14px; background: #fbeaf0; border-radius: 10px; padding: 14px 18px; border-left: 4px solid #d4537e; font-size: 13px; color: #4b1528; line-height: 1.8;">
+      ※ セミナーの進行形式については今後ご相談させてください。<br>
+      （例：トークセッション形式で進めるか／パートごとに持ち時間を分けるか／実技デモンストレーションを組み込むか　など）
+    </div>
+  </div>
+
+  <!-- 5. 連動施策 -->
+  <div class="section">
+    <div class="section-title">5. エステティック通信との連動施策</div>
+
+    <div class="collab-section">
+      <div class="collab-sub-title collab-sub-title-pink">① 先生方からの集客施策</div>
+      <ul class="collab-list">
+        <li><span class="bullet-pink">✦</span>飯尾先生・広澤先生それぞれの既存顧客・スクール生・協会会員へのセミナー案内</li>
+        <li><span class="bullet-pink">✦</span>両先生のメルマガやインスタグラムを使用した告知配信</li>
+      </ul>
+    </div>
+
+    <div class="collab-section">
+      <div class="collab-sub-title collab-sub-title-blue">② エステティック通信 複数メディア告知（予定）</div>
+      <ul class="collab-list collab-list-blue">
+        <li><span class="bullet-blue">✦</span>【誌面】エステティック通信本誌へのセミナー告知掲載（開催号・前号への記事・広告枠での案内）</li>
+        <li><span class="bullet-blue">✦</span>【WEBサイト】エステティック通信WEBサイトへのイベントページ設置・SEO記事による集客</li>
+        <li><span class="bullet-blue">✦</span>【LINE公式】読者・登録者向けLINE配信（告知・リマインド・当日速報の3配信）</li>
+        <li><span class="bullet-blue">✦</span>【メルマガ】定期購読読者向けメールマガジンでの案内（テキスト＋画像バナー形式）</li>
+        <li><span class="bullet-blue">✦</span>【Instagram】登壇者紹介・セミナー見どころ投稿を複数回展開（リール・カルーセル活用）</li>
+      </ul>
+    </div>
+
+    <div class="collab-section">
+      <div class="collab-sub-title collab-sub-title-teal">③ アフターレポート展開</div>
+      <ul class="collab-list collab-list-teal">
+        <li><span class="bullet-teal">✦</span>【誌面レポート】セミナー当日の様子・登壇者コメント・参加者の声を次号誌面で特集記事化</li>
+        <li><span class="bullet-teal">✦</span>【アンケートデータ活用】参加者アンケートで収集した業界課題データを次号特集・広告主向け提案資料に転用</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <strong>エステティック通信編集部</strong><br>
+    ご不明点・修正希望がございましたらお気軽にお申し付けください。
+  </div>
+
+</div>
+</body>
+</html>
